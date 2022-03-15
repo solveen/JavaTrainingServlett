@@ -15,7 +15,7 @@ public class HelloServlet extends HttpServlet {
 
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("web/index.html");
+        response.setContentType("text/html");
         String UserName = request.getParameter("userName");
         String password = request.getParameter("uPassword");
         String radio = request.getParameter("Gender");
